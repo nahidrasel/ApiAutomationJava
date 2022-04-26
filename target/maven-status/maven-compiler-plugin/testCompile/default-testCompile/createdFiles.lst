@@ -1,0 +1,11 @@
+com\nahidmahmud\javaapiautomation101\reqresin\UserRegisterTest.class
+com\nahidmahmud\javaapiautomation101\reqresin\CreateUserTest.class
+com\nahidmahmud\javaapiautomation101\reqresin\UpdatePatchUserTest.class
+com\nahidmahmud\javaapiautomation101\reqresin\DeleteUserTest.class
+com\nahidmahmud\javaapiautomation101\reqresin\GetUserTest.class
+dummy\restapiexample\com\UpdateEmployeeIDTest.class
+dummy\restapiexample\com\DeleteEmployeeDataTest.class
+com\nahidmahmud\javaapiautomation101\reqresin\UpdateUserTest.class
+dummy\restapiexample\com\GetAllEmployeeDataTest.class
+com\nahidmahmud\javaapiautomation101\reqresin\UserLoginTest.class
+dummy\restapiexample\com\CreateEmployeeIDTest.class

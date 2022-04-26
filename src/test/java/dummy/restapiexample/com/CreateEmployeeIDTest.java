@@ -9,34 +9,36 @@ import org.testng.annotations.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-public class CreateEmployeeIDTest {
+public class CreateEmployeeIDTest extends BaseTestClass {
 
     @Test
-    public void CreateNewEmployee() {
-        //Arrange
-        RestAssured.baseURI = "https://dummy.restapiexample.com/";
-        String resourceUrl = "/api/v1/create";
+    public void CreateNewEmployer_StatusCode()
+    {
+        String requestBody = "{\"name\":\"test\",\n\"salary\"}";
+        String resourceUrl = "/api/v1/EmployerCreate";
 
-        //Act
-        RequestSpecification httpRequest = RestAssured.given().contentType("application/json")
-                .body("{\"name\":\"test\",\n\"salary\":\"123\",\n\"age\":\"23\"}");
-
-        Response response = httpRequest.request(Method.POST, resourceUrl);
-
-/*
-        Response response = given().contentType("application/json")
-                .body("{\"name\":\"test\",\n\"salary\":\"123\",\n\"age\":\"23\"}")
-                .when().post(resourceUrl);
-*/
+        Response response = createPostRequest(resourceUrl, requestBody);
         //Assert
         System.out.println("Status received => " + response.getStatusLine());
-        System.out.println("Response => " + response.prettyPrint());
-        // assertEquals(201, response.statusCode());
+        System.out.println("Response => " + response.print());
+        assertEquals(200, response.statusCode());
+    }
+
+
+    @Test
+    public void CreateNewEmployee_Body() {
+
+        String requestBody = "{\"name\":\"test\",\"salary\":\"123\",\"age\":\"23\"}";
+        String resourceUrl = "/api/v1/create";
+
+        Response response = createPostRequest(resourceUrl, requestBody);
+
+
 
         //Verify response body
         JsonPath json = response.jsonPath();
 
-        String name = json.get("data.name");
+        String name = json.getJsonObject("data.name");
         System.out.println("Name is => " + name);
         assertEquals("test", name);
 
@@ -47,7 +49,6 @@ public class CreateEmployeeIDTest {
         String age = json.get("data.age");
         System.out.println("Age is => " + age);
         assertEquals("23", age);
-
 
         String message = json.get("message");
         System.out.println("Message => " + message);

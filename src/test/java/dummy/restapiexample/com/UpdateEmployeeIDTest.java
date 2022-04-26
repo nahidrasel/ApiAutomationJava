@@ -48,7 +48,7 @@ public class UpdateEmployeeIDTest {
 
         String message = json.get("message");
         System.out.println("Message => " + message);
-        assertEquals("Successfully! Record has been added.", message);
+        assertEquals("Successfully! Record has been updated.", message);
 
     }
 }

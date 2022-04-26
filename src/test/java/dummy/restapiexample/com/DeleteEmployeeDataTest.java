@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-public class DeleteEmployeeDataTest {
+public class DeleteEmployeeDataTest extends BaseTestClass{
 
     @Test
     public void DeleteEmployeeID() {
@@ -24,7 +24,7 @@ public class DeleteEmployeeDataTest {
         //Assert
         System.out.println("Status received => " + response.getStatusLine());
         System.out.println("Response => " + response.prettyPrint());
-      // assertEquals(200, response.statusCode());
+        assertEquals(200, response.statusCode());
 
         //Verify response body
         JsonPath json = response.jsonPath();

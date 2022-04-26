@@ -33,6 +33,24 @@ public class GetAllEmployeeDataTest {
         String message = json.get("message");
         System.out.println("Message => " + message);
         assertEquals("Successfully! All records has been fetched.", message);
+
+        int empId = json.get("data[1].id");
+        System.out.println("Employee ID is :"+empId);
+        assertEquals(2,empId);
+
+
+        String empName = json.get("data[1].employee_name");
+        System.out.println("Employee Name is :"+empName);
+        assertEquals("Garrett Winters",empName);
+
+        int empSalary = json.get("data[1].employee_salary");
+        System.out.println("Employee Salary is :"+empSalary);
+        assertEquals(170750,empSalary);
+
+        var empAge = json.get("data[1].employee_age");
+        System.out.println("Employee Age is :"+empAge);
+        assertEquals(63,empAge);
+
     }
 }
 

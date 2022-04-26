@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Command line suite</th></tr>
+<tr><td><a href="#t0">Command line test</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">9,058</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">dummy.restapiexample.com.DeleteEmployeeDataTest</td><td><a href="#m0">DeleteEmployeeID</a></td><td rowspan="1">1650601291515</td><td rowspan="1">813</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.nahidmahmud.javaapiautomation101.reqresin.CreateUserTest</td><td><a href="#m1">postMethodByJson</a></td><td rowspan="1">1650601284835</td><td rowspan="1">2239</td></tr><tr class="passedodd"><td rowspan="1">com.nahidmahmud.javaapiautomation101.reqresin.DeleteUserTest</td><td><a href="#m2">deleteMethodByJson</a></td><td rowspan="1">1650601287079</td><td rowspan="1">751</td></tr><tr class="passedeven"><td rowspan="1">com.nahidmahmud.javaapiautomation101.reqresin.UpdatePatchUserTest</td><td><a href="#m3">patchMethodByJson</a></td><td rowspan="1">1650601287832</td><td rowspan="1">735</td></tr><tr class="passedodd"><td rowspan="1">com.nahidmahmud.javaapiautomation101.reqresin.UpdateUserTest</td><td><a href="#m4">putMethodByJson</a></td><td rowspan="1">1650601288568</td><td rowspan="1">727</td></tr><tr class="passedeven"><td rowspan="1">com.nahidmahmud.javaapiautomation101.reqresin.UserLoginTest</td><td><a href="#m5">userLogin</a></td><td rowspan="1">1650601289296</td><td rowspan="1">692</td></tr><tr class="passedodd"><td rowspan="1">com.nahidmahmud.javaapiautomation101.reqresin.UserRegisterTest</td><td><a href="#m6">userRegistration</a></td><td rowspan="1">1650601289989</td><td rowspan="1">694</td></tr><tr class="passedeven"><td rowspan="1">dummy.restapiexample.com.CreateEmployeeIDTest</td><td><a href="#m7">CreateNewEmployee</a></td><td rowspan="1">1650601290683</td><td rowspan="1">831</td></tr><tr class="passedodd"><td rowspan="1">dummy.restapiexample.com.GetAllEmployeeDataTest</td><td><a href="#m8">allEmployeeData</a></td><td rowspan="1">1650601292330</td><td rowspan="1">793</td></tr><tr class="passedeven"><td rowspan="1">dummy.restapiexample.com.UpdateEmployeeIDTest</td><td><a href="#m9">UpdateEmployeeID</a></td><td rowspan="1">1650601293125</td><td rowspan="1">748</td></tr></tbody>
+</table>
+<h2>Command line test</h2><h3 id="m0">dummy.restapiexample.com.DeleteEmployeeDataTest#DeleteEmployeeID</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at dummy.restapiexample.com.DeleteEmployeeDataTest.DeleteEmployeeID(DeleteEmployeeDataTest.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
+	... 38 more
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.nahidmahmud.javaapiautomation101.reqresin.CreateUserTest#postMethodByJson</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.nahidmahmud.javaapiautomation101.reqresin.DeleteUserTest#deleteMethodByJson</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.nahidmahmud.javaapiautomation101.reqresin.UpdatePatchUserTest#patchMethodByJson</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.nahidmahmud.javaapiautomation101.reqresin.UpdateUserTest#putMethodByJson</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.nahidmahmud.javaapiautomation101.reqresin.UserLoginTest#userLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.nahidmahmud.javaapiautomation101.reqresin.UserRegisterTest#userRegistration</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">dummy.restapiexample.com.CreateEmployeeIDTest#CreateNewEmployee</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">dummy.restapiexample.com.GetAllEmployeeDataTest#allEmployeeData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">dummy.restapiexample.com.UpdateEmployeeIDTest#UpdateEmployeeID</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
