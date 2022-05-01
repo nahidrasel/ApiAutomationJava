@@ -12,17 +12,16 @@ public class CreateUserTest {
 
     @Test
     public void postMethodByJson() {
+
         //Arrange
         RestAssured.baseURI = "https://reqres.in";
 
         String resourceUrl = "/api/users/";
 
         //Act
-
         Response response = given().contentType("application/json")
                 .body("{\"name\":\"morpheus\",\n\"job\":\"leader\"}")
                 .when().post(resourceUrl);
-
 
         //Assert
         System.out.println("Status received => " + response.getStatusLine());
@@ -39,7 +38,6 @@ public class CreateUserTest {
         String job = json.get("job");
         System.out.println("Job is => " + job);
         assertEquals("leader", job);
-
 
     }
 }

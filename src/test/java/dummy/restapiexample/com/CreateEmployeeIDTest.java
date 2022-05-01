@@ -1,12 +1,8 @@
 package dummy.restapiexample.com;
 
-import io.restassured.RestAssured;
-import io.restassured.http.Method;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.Test;
-
 import static junit.framework.Assert.assertEquals;
 
 public class CreateEmployeeIDTest extends BaseTestClass {
@@ -14,10 +10,11 @@ public class CreateEmployeeIDTest extends BaseTestClass {
     @Test
     public void CreateNewEmployer_StatusCode()
     {
-        String requestBody = "{\"name\":\"test\",\n\"salary\"}";
+        String requestBody = "{\"name\":\"test\",\"salary\":\"123\",\"age\":\"23\"}";
         String resourceUrl = "/api/v1/EmployerCreate";
 
         Response response = createPostRequest(resourceUrl, requestBody);
+
         //Assert
         System.out.println("Status received => " + response.getStatusLine());
         System.out.println("Response => " + response.print());
@@ -34,11 +31,11 @@ public class CreateEmployeeIDTest extends BaseTestClass {
         Response response = createPostRequest(resourceUrl, requestBody);
 
 
-
         //Verify response body
+
         JsonPath json = response.jsonPath();
 
-        String name = json.getJsonObject("data.name");
+        String name = json.get("data.name");
         System.out.println("Name is => " + name);
         assertEquals("test", name);
 

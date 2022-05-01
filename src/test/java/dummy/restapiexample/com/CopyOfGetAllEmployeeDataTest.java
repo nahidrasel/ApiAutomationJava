@@ -6,24 +6,26 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.Test;
+
 import static junit.framework.Assert.assertEquals;
 
-public class GetAllEmployeeDataTest extends BaseTestClass{
+public class CopyOfGetAllEmployeeDataTest {
 
-        @Test
-        public void GetAllEmployeeData_StatusCode()
-        {
-            String requestBody = "" ;
-            String resourceUrl = "/api/v1/employees";
+    @Test
+    public void allEmployeeData() {
 
-            Response response =getPostRequest(resourceUrl, requestBody);
+        //Arrange
+        RestAssured.baseURI = "https://dummy.restapiexample.com/";
+        String resourceUrl = "/api/v1/employees";
 
-            //Assert
-            System.out.println("Status received => " + response.getStatusLine());
-            System.out.println("Response => " + response.print());
-            assertEquals(200, response.statusCode());
+        //Act
+        RequestSpecification httpRequest = RestAssured.given();
+        Response response = httpRequest.request(Method.GET, resourceUrl);
 
-
+        //Assert
+        System.out.println("Status received => " + response.getStatusLine());
+        System.out.println("Response => " + response.prettyPrint());
+        assertEquals(200, response.statusCode());
 
         //Verify response body
         JsonPath json = response.jsonPath();

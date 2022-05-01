@@ -9,26 +9,22 @@ import org.testng.annotations.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-public class UpdateEmployeeIDTest {
-
-    @Test
-    public void UpdateEmployeeID() {
-        //Arrange
-        RestAssured.baseURI = "https://dummy.restapiexample.com/";
-        String resourceUrl = "/public/api/v1/update/21";
-
-        //Act
-
-        RequestSpecification httpRequest = RestAssured.given().contentType("application/json")
-                .body("{\"employee_name\":\"Nahid\",\n\"employee_salary\":\"123\",\n\"employee_age\":\"23\"}");
-
-        Response response = httpRequest.request(Method.PUT, resourceUrl);
+public class UpdateEmployeeIDTest extends BaseTestClass{
 
 
-        //Assert
-        System.out.println("Status received => " + response.getStatusLine());
-        System.out.println("Response => " + response.prettyPrint());
-       assertEquals(200, response.statusCode());
+        @Test
+        public void UpdateAnEmployeeData_StatusCode()
+        {
+            String requestBody = "{\"employee_name\":\"Nahid\",\n\"employee_salary\":\"123\",\n\"employee_age\":\"23\"}" ;
+            String resourceUrl = "/public/api/v1/update/21";
+
+            Response response =updatePutRequest(resourceUrl, requestBody);
+
+            //Assert
+            System.out.println("Status received => " + response.getStatusLine());
+            System.out.println("Response => " + response.print());
+            assertEquals(200, response.statusCode());
+
 
         //Verify response body
         JsonPath json = response.jsonPath();
