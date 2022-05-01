@@ -1,34 +1,28 @@
 package dummy.restapiexample.com;
 
-import io.restassured.RestAssured;
-import io.restassured.http.Method;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-public class UpdateEmployeeIDTest extends BaseTestClass{
+public class UpdateEmployeeIDTest extends BaseTestClass {
 
 
-        @Test
-        public void UpdateAnEmployeeData_StatusCode()
-        {
-            String requestBody = "{\"employee_name\":\"Nahid\",\n\"employee_salary\":\"123\",\n\"employee_age\":\"23\"}" ;
-            String resourceUrl = "/public/api/v1/update/21";
+    @Test
+    public void UpdateAnEmployeeData_StatusCode() {
+        String requestBody = "{\"employee_name\":\"Nahid\",\n\"employee_salary\":\"123\",\n\"employee_age\":\"23\"}";
+        String resourceUrl = "/public/api/v1/update/21";
 
-            Response response =updatePutRequest(resourceUrl, requestBody);
+        Response response = updatePutRequest(resourceUrl, requestBody);
 
-            //Assert
-            System.out.println("Status received => " + response.getStatusLine());
-            System.out.println("Response => " + response.print());
-            assertEquals(200, response.statusCode());
-
+        //Assert
+        System.out.println("Status received => " + response.getStatusLine());
+        System.out.println("Response => " + response.print());
+        assertEquals(200, response.statusCode());
 
         //Verify response body
         JsonPath json = response.jsonPath();
-
         String name = json.get("data.employee_name");
         System.out.println("Name is => " + name);
         assertEquals("Nahid", name);

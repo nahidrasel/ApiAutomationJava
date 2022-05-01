@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-public class DeleteEmployeeDataTest extends BaseTestClass{
+public class DeleteEmployeeDataTest extends BaseTestClass {
 
     @Test
     public void DeleteEmployeeID() {

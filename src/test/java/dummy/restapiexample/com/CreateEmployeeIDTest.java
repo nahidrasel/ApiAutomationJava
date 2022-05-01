@@ -3,13 +3,13 @@ package dummy.restapiexample.com;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
+
 import static junit.framework.Assert.assertEquals;
 
 public class CreateEmployeeIDTest extends BaseTestClass {
 
     @Test
-    public void CreateNewEmployer_StatusCode()
-    {
+    public void CreateNewEmployer_StatusCode() {
         String requestBody = "{\"name\":\"test\",\"salary\":\"123\",\"age\":\"23\"}";
         String resourceUrl = "/api/v1/EmployerCreate";
 
