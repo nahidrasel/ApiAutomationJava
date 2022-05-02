@@ -32,7 +32,6 @@ public class CreateEmployeeIDTest extends BaseTestClass {
 
 
         //Verify response body
-
         JsonPath json = response.jsonPath();
 
         String name = json.get("data.name");
@@ -53,4 +52,3 @@ public class CreateEmployeeIDTest extends BaseTestClass {
 
     }
 }
-
