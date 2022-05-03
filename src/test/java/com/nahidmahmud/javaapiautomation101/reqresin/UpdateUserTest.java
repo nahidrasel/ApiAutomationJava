@@ -40,7 +40,5 @@ public class UpdateUserTest {
         System.out.println("Job is => " + job);
         assertEquals("zion resident", job);
 
-
     }
 }
-
