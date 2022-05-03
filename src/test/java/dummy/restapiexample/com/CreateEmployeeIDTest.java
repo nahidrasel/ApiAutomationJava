@@ -21,7 +21,6 @@ public class CreateEmployeeIDTest extends BaseTestClass {
         assertEquals(200, response.statusCode());
     }
 
-
     @Test
     public void CreateNewEmployee_Body() {
 

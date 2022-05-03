@@ -1,10 +1,7 @@
 package dummy.restapiexample.com;
 
-import io.restassured.RestAssured;
-import io.restassured.http.Method;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.Test;
 
 import static junit.framework.Assert.assertEquals;
@@ -12,18 +9,15 @@ import static junit.framework.Assert.assertEquals;
 public class DeleteEmployeeDataTest extends BaseTestClass {
 
     @Test
-    public void DeleteEmployeeID() {
-        //Arrange
-        RestAssured.baseURI = "https://dummy.restapiexample.com/";
+    public void DeleteEmployer_StatusCode() {
+        String requestBody = "";
         String resourceUrl = "/api/v1/delete/2";
 
-        //Act
-        RequestSpecification httpRequest = RestAssured.given();
-        Response response = httpRequest.request(Method.DELETE, resourceUrl);
+        Response response = deletePostRequest(resourceUrl, requestBody);
 
         //Assert
         System.out.println("Status received => " + response.getStatusLine());
-        System.out.println("Response => " + response.prettyPrint());
+        System.out.println("Response => " + response.print());
         assertEquals(200, response.statusCode());
 
         //Verify response body
@@ -32,6 +26,5 @@ public class DeleteEmployeeDataTest extends BaseTestClass {
         String message = json.get("message");
         System.out.println("Message => " + message);
         assertEquals("Successfully! Record has been deleted", message);
-
     }
 }
