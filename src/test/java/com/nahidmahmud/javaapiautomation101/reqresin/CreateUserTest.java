@@ -1,27 +1,21 @@
 package com.nahidmahmud.javaapiautomation101.reqresin;
 
-import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
-import static io.restassured.RestAssured.given;
 import static junit.framework.Assert.assertEquals;
 
-public class CreateUserTest {
+public class CreateUserTest extends BaseTestClass {
 
     @Test
-    public void postMethodByJson() {
+    public void CreateUserId_StatusCode() {
 
         //Arrange
-        RestAssured.baseURI = "https://reqres.in";
-
+        String requestBody = "{\"name\":\"morpheus\",\n\"job\":\"leader\"}";
         String resourceUrl = "/api/users/";
 
-        //Act
-        Response response = given().contentType("application/json")
-                .body("{\"name\":\"morpheus\",\n\"job\":\"leader\"}")
-                .when().post(resourceUrl);
+        Response response = createPostRequest(resourceUrl, requestBody);
 
         //Assert
         System.out.println("Status received => " + response.getStatusLine());
@@ -41,4 +35,3 @@ public class CreateUserTest {
 
     }
 }
-
