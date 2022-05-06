@@ -8,16 +8,16 @@
           <include name="CreateNewEmployer_StatusCode"/>
         </methods>
       </class> <!-- dummy.restapiexample.com.CreateEmployeeIDTest -->
-      <class name="dummy.restapiexample.com.GetAllEmployeeDataTest">
-        <methods>
-          <include name="GetAllEmployeeData_StatusCode"/>
-        </methods>
-      </class> <!-- dummy.restapiexample.com.GetAllEmployeeDataTest -->
       <class name="dummy.restapiexample.com.UpdateEmployeeIDTest">
         <methods>
           <include name="UpdateAnEmployeeData_StatusCode"/>
         </methods>
       </class> <!-- dummy.restapiexample.com.UpdateEmployeeIDTest -->
+      <class name="dummy.restapiexample.com.DeleteEmployeeDataTest">
+        <methods>
+          <include name="DeleteEmployer_StatusCode"/>
+        </methods>
+      </class> <!-- dummy.restapiexample.com.DeleteEmployeeDataTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="13" failures="3" name="TestSuite" time="12.113" errors="0" skipped="0">
+<testsuite tests="13" failures="3" name="TestSuite" time="19.392" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2021.3.3"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -60,15 +60,15 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.nahidmahmud.javaapiautomation101.reqresin.CreateUserTest" name="CreateUserId_StatusCode" time="2.227"/>
-  <testcase classname="com.nahidmahmud.javaapiautomation101.reqresin.DeleteUserTest" name="DeleteUserId_StatusCode" time="0.728"/>
-  <testcase classname="com.nahidmahmud.javaapiautomation101.reqresin.UpdatePatchUserTest" name="patchMethodByJson" time="0.793"/>
-  <testcase classname="com.nahidmahmud.javaapiautomation101.reqresin.UpdateUserTest" name="putMethodByJson" time="0.732"/>
-  <testcase classname="com.nahidmahmud.javaapiautomation101.reqresin.UserLoginTest" name="userLogin" time="0.707"/>
-  <testcase classname="com.nahidmahmud.javaapiautomation101.reqresin.UserRegisterTest" name="userRegistration" time="0.705"/>
-  <testcase classname="dummy.restapiexample.com.CopyOfGetAllEmployeeDataTest" name="allEmployeeData" time="1.083"/>
-  <testcase classname="dummy.restapiexample.com.CreateEmployeeIDTest" name="CreateNewEmployee_Body" time="0.825"/>
-  <testcase classname="dummy.restapiexample.com.CreateEmployeeIDTest" name="CreateNewEmployer_StatusCode" time="0.711">
+  <testcase classname="com.nahidmahmud.javaapiautomation101.reqresin.CreateUserTest" name="CreateUserId_StatusCode" time="7.071"/>
+  <testcase classname="com.nahidmahmud.javaapiautomation101.reqresin.DeleteUserTest" name="DeleteUserId_StatusCode" time="0.849"/>
+  <testcase classname="com.nahidmahmud.javaapiautomation101.reqresin.UpdatePatchUserTest" name="patchMethodByJson" time="0.867"/>
+  <testcase classname="com.nahidmahmud.javaapiautomation101.reqresin.UpdateUserTest" name="putMethodByJson" time="0.825"/>
+  <testcase classname="com.nahidmahmud.javaapiautomation101.reqresin.UserLoginTest" name="userLogin" time="0.754"/>
+  <testcase classname="com.nahidmahmud.javaapiautomation101.reqresin.UserRegisterTest" name="userRegistration" time="0.804"/>
+  <testcase classname="dummy.restapiexample.com.CopyOfGetAllEmployeeDataTest" name="allEmployeeData" time="1.403"/>
+  <testcase classname="dummy.restapiexample.com.CreateEmployeeIDTest" name="CreateNewEmployee_Body" time="0.919"/>
+  <testcase classname="dummy.restapiexample.com.CreateEmployeeIDTest" name="CreateNewEmployer_StatusCode" time="0.766">
     <failure message="expected:&lt;200&gt; but was:&lt;405&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;200&gt; but was:&lt;405&gt;
 	at junit.framework.Assert.fail(Assert.java:47)
 	at junit.framework.Assert.failNotEquals(Assert.java:282)
@@ -126,15 +126,14 @@ h2 { font-size: 18px; }&lt;/style&gt;
 &lt;/html&gt;
 </system-out>
   </testcase>
-  <testcase classname="dummy.restapiexample.com.DeleteEmployeeDataTest" name="DeleteEmployer_StatusCode" time="0.729"/>
-  <testcase classname="dummy.restapiexample.com.GetAllEmployeeDataTest" name="GetAllEmployeeData_StatusCode" time="0.776">
+  <testcase classname="dummy.restapiexample.com.DeleteEmployeeDataTest" name="DeleteEmployer_StatusCode" time="0.768">
     <failure message="expected:&lt;200&gt; but was:&lt;429&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;200&gt; but was:&lt;429&gt;
 	at junit.framework.Assert.fail(Assert.java:47)
 	at junit.framework.Assert.failNotEquals(Assert.java:282)
 	at junit.framework.Assert.assertEquals(Assert.java:64)
 	at junit.framework.Assert.assertEquals(Assert.java:201)
 	at junit.framework.Assert.assertEquals(Assert.java:207)
-	at dummy.restapiexample.com.GetAllEmployeeDataTest.GetAllEmployeeData_StatusCode(GetAllEmployeeDataTest.java:24)
+	at dummy.restapiexample.com.DeleteEmployeeDataTest.DeleteEmployer_StatusCode(DeleteEmployeeDataTest.java:21)
 </failure>
     <system-out>Status received =&gt; HTTP/1.1 429 Too Many Requests
 &lt;!DOCTYPE html&gt;
@@ -261,7 +260,8 @@ Response =&gt; &lt;!DOCTYPE html&gt;
 
 </system-out>
   </testcase>
-  <testcase classname="dummy.restapiexample.com.UpdateEmployeeIDTest" name="UpdateAnEmployeeData_StatusCode" time="0.719">
+  <testcase classname="dummy.restapiexample.com.GetAllEmployeeDataTest" name="GetAllEmployeeData_StatusCode" time="1.006"/>
+  <testcase classname="dummy.restapiexample.com.UpdateEmployeeIDTest" name="UpdateAnEmployeeData_StatusCode" time="0.773">
     <failure message="expected:&lt;200&gt; but was:&lt;429&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;200&gt; but was:&lt;429&gt;
 	at junit.framework.Assert.fail(Assert.java:47)
 	at junit.framework.Assert.failNotEquals(Assert.java:282)
@@ -395,5 +395,5 @@ Response =&gt; &lt;!DOCTYPE html&gt;
 
 </system-out>
   </testcase>
-  <testcase classname="com.nahidmahmud.javaapiautomation101.reqresin.GetUserTest" name="test_learning_getMethodUserById on test_learning_getMethodUserById(com.nahidmahmud.javaapiautomation101.reqresin.GetUserTest)" time="1.378"/>
+  <testcase classname="com.nahidmahmud.javaapiautomation101.reqresin.GetUserTest" name="test_learning_getMethodUserById on test_learning_getMethodUserById(com.nahidmahmud.javaapiautomation101.reqresin.GetUserTest)" time="2.587"/>
 </testsuite>

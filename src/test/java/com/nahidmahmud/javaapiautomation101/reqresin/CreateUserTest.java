@@ -32,6 +32,5 @@ public class CreateUserTest extends BaseTestClass {
         String job = json.get("job");
         System.out.println("Job is => " + job);
         assertEquals("leader", job);
-
     }
 }

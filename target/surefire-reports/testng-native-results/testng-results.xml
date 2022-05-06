@@ -2,34 +2,34 @@
 <testng-results ignored="0" total="12" passed="9" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-02T16:58:21 NZST" name="Command line suite" finished-at="2022-05-02T16:58:32 NZST" duration-ms="10768">
+  <suite started-at="2022-05-04T11:39:53 NZST" name="Command line suite" finished-at="2022-05-04T11:40:10 NZST" duration-ms="16905">
     <groups>
     </groups>
-    <test started-at="2022-05-02T16:58:21 NZST" name="Command line test" finished-at="2022-05-02T16:58:32 NZST" duration-ms="10768">
+    <test started-at="2022-05-04T11:39:53 NZST" name="Command line test" finished-at="2022-05-04T11:40:10 NZST" duration-ms="16905">
       <class name="com.nahidmahmud.javaapiautomation101.reqresin.UpdateUserTest">
-        <test-method signature="putMethodByJson()[pri:0, instance:com.nahidmahmud.javaapiautomation101.reqresin.UpdateUserTest@23a5fd2]" started-at="2022-05-02T16:58:25 NZST" name="putMethodByJson" finished-at="2022-05-02T16:58:25 NZST" duration-ms="733" status="PASS">
+        <test-method signature="putMethodByJson()[pri:0, instance:com.nahidmahmud.javaapiautomation101.reqresin.UpdateUserTest@23a5fd2]" started-at="2022-05-04T11:40:02 NZST" name="putMethodByJson" finished-at="2022-05-04T11:40:03 NZST" duration-ms="824" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- putMethodByJson -->
       </class> <!-- com.nahidmahmud.javaapiautomation101.reqresin.UpdateUserTest -->
       <class name="com.nahidmahmud.javaapiautomation101.reqresin.UserRegisterTest">
-        <test-method signature="userRegistration()[pri:0, instance:com.nahidmahmud.javaapiautomation101.reqresin.UserRegisterTest@dd3b207]" started-at="2022-05-02T16:58:26 NZST" name="userRegistration" finished-at="2022-05-02T16:58:27 NZST" duration-ms="704" status="PASS">
+        <test-method signature="userRegistration()[pri:0, instance:com.nahidmahmud.javaapiautomation101.reqresin.UserRegisterTest@dd3b207]" started-at="2022-05-04T11:40:03 NZST" name="userRegistration" finished-at="2022-05-04T11:40:04 NZST" duration-ms="803" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userRegistration -->
       </class> <!-- com.nahidmahmud.javaapiautomation101.reqresin.UserRegisterTest -->
       <class name="com.nahidmahmud.javaapiautomation101.reqresin.UpdatePatchUserTest">
-        <test-method signature="patchMethodByJson()[pri:0, instance:com.nahidmahmud.javaapiautomation101.reqresin.UpdatePatchUserTest@62bd765]" started-at="2022-05-02T16:58:24 NZST" name="patchMethodByJson" finished-at="2022-05-02T16:58:25 NZST" duration-ms="793" status="PASS">
+        <test-method signature="patchMethodByJson()[pri:0, instance:com.nahidmahmud.javaapiautomation101.reqresin.UpdatePatchUserTest@62bd765]" started-at="2022-05-04T11:40:01 NZST" name="patchMethodByJson" finished-at="2022-05-04T11:40:02 NZST" duration-ms="867" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- patchMethodByJson -->
       </class> <!-- com.nahidmahmud.javaapiautomation101.reqresin.UpdatePatchUserTest -->
       <class name="dummy.restapiexample.com.CreateEmployeeIDTest">
-        <test-method signature="CreateNewEmployee_Body()[pri:0, instance:dummy.restapiexample.com.CreateEmployeeIDTest@58fdd99]" started-at="2022-05-02T16:58:28 NZST" name="CreateNewEmployee_Body" finished-at="2022-05-02T16:58:29 NZST" duration-ms="825" status="PASS">
+        <test-method signature="CreateNewEmployee_Body()[pri:0, instance:dummy.restapiexample.com.CreateEmployeeIDTest@58fdd99]" started-at="2022-05-04T11:40:06 NZST" name="CreateNewEmployee_Body" finished-at="2022-05-04T11:40:07 NZST" duration-ms="920" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateNewEmployee_Body -->
-        <test-method signature="CreateNewEmployer_StatusCode()[pri:0, instance:dummy.restapiexample.com.CreateEmployeeIDTest@58fdd99]" started-at="2022-05-02T16:58:29 NZST" name="CreateNewEmployer_StatusCode" finished-at="2022-05-02T16:58:29 NZST" duration-ms="707" status="FAIL">
+        <test-method signature="CreateNewEmployer_StatusCode()[pri:0, instance:dummy.restapiexample.com.CreateEmployeeIDTest@58fdd99]" started-at="2022-05-04T11:40:07 NZST" name="CreateNewEmployer_StatusCode" finished-at="2022-05-04T11:40:07 NZST" duration-ms="759" status="FAIL">
           <exception class="junit.framework.AssertionFailedError">
             <message>
               <![CDATA[expected:<200> but was:<405>]]>
@@ -84,13 +84,13 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
         </test-method> <!-- CreateNewEmployer_StatusCode -->
       </class> <!-- dummy.restapiexample.com.CreateEmployeeIDTest -->
       <class name="dummy.restapiexample.com.CopyOfGetAllEmployeeDataTest">
-        <test-method signature="allEmployeeData()[pri:0, instance:dummy.restapiexample.com.CopyOfGetAllEmployeeDataTest@551bdc27]" started-at="2022-05-02T16:58:27 NZST" name="allEmployeeData" finished-at="2022-05-02T16:58:28 NZST" duration-ms="1082" status="PASS">
+        <test-method signature="allEmployeeData()[pri:0, instance:dummy.restapiexample.com.CopyOfGetAllEmployeeDataTest@551bdc27]" started-at="2022-05-04T11:40:04 NZST" name="allEmployeeData" finished-at="2022-05-04T11:40:06 NZST" duration-ms="1403" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allEmployeeData -->
       </class> <!-- dummy.restapiexample.com.CopyOfGetAllEmployeeDataTest -->
-      <class name="dummy.restapiexample.com.GetAllEmployeeDataTest">
-        <test-method signature="GetAllEmployeeData_StatusCode()[pri:0, instance:dummy.restapiexample.com.GetAllEmployeeDataTest@7bc1a03d]" started-at="2022-05-02T16:58:30 NZST" name="GetAllEmployeeData_StatusCode" finished-at="2022-05-02T16:58:31 NZST" duration-ms="776" status="FAIL">
+      <class name="dummy.restapiexample.com.DeleteEmployeeDataTest">
+        <test-method signature="DeleteEmployer_StatusCode()[pri:0, instance:dummy.restapiexample.com.DeleteEmployeeDataTest@6b1274d2]" started-at="2022-05-04T11:40:07 NZST" name="DeleteEmployer_StatusCode" finished-at="2022-05-04T11:40:08 NZST" duration-ms="767" status="FAIL">
           <exception class="junit.framework.AssertionFailedError">
             <message>
               <![CDATA[expected:<200> but was:<429>]]>
@@ -102,7 +102,7 @@ at junit.framework.Assert.failNotEquals(Assert.java:282)
 at junit.framework.Assert.assertEquals(Assert.java:64)
 at junit.framework.Assert.assertEquals(Assert.java:201)
 at junit.framework.Assert.assertEquals(Assert.java:207)
-at dummy.restapiexample.com.GetAllEmployeeDataTest.GetAllEmployeeData_StatusCode(GetAllEmployeeDataTest.java:24)
+at dummy.restapiexample.com.DeleteEmployeeDataTest.DeleteEmployer_StatusCode(DeleteEmployeeDataTest.java:21)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
@@ -142,16 +142,16 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
           </exception> <!-- junit.framework.AssertionFailedError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GetAllEmployeeData_StatusCode -->
-      </class> <!-- dummy.restapiexample.com.GetAllEmployeeDataTest -->
-      <class name="dummy.restapiexample.com.DeleteEmployeeDataTest">
-        <test-method signature="DeleteEmployer_StatusCode()[pri:0, instance:dummy.restapiexample.com.DeleteEmployeeDataTest@6b1274d2]" started-at="2022-05-02T16:58:29 NZST" name="DeleteEmployer_StatusCode" finished-at="2022-05-02T16:58:30 NZST" duration-ms="730" status="PASS">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- DeleteEmployer_StatusCode -->
       </class> <!-- dummy.restapiexample.com.DeleteEmployeeDataTest -->
+      <class name="dummy.restapiexample.com.GetAllEmployeeDataTest">
+        <test-method signature="GetAllEmployeeData_StatusCode()[pri:0, instance:dummy.restapiexample.com.GetAllEmployeeDataTest@7bc1a03d]" started-at="2022-05-04T11:40:08 NZST" name="GetAllEmployeeData_StatusCode" finished-at="2022-05-04T11:40:09 NZST" duration-ms="1008" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllEmployeeData_StatusCode -->
+      </class> <!-- dummy.restapiexample.com.GetAllEmployeeDataTest -->
       <class name="dummy.restapiexample.com.UpdateEmployeeIDTest">
-        <test-method signature="UpdateAnEmployeeData_StatusCode()[pri:0, instance:dummy.restapiexample.com.UpdateEmployeeIDTest@70b0b186]" started-at="2022-05-02T16:58:31 NZST" name="UpdateAnEmployeeData_StatusCode" finished-at="2022-05-02T16:58:32 NZST" duration-ms="717" status="FAIL">
+        <test-method signature="UpdateAnEmployeeData_StatusCode()[pri:0, instance:dummy.restapiexample.com.UpdateEmployeeIDTest@70b0b186]" started-at="2022-05-04T11:40:09 NZST" name="UpdateAnEmployeeData_StatusCode" finished-at="2022-05-04T11:40:10 NZST" duration-ms="771" status="FAIL">
           <exception class="junit.framework.AssertionFailedError">
             <message>
               <![CDATA[expected:<200> but was:<429>]]>
@@ -206,19 +206,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
         </test-method> <!-- UpdateAnEmployeeData_StatusCode -->
       </class> <!-- dummy.restapiexample.com.UpdateEmployeeIDTest -->
       <class name="com.nahidmahmud.javaapiautomation101.reqresin.DeleteUserTest">
-        <test-method signature="DeleteUserId_StatusCode()[pri:0, instance:com.nahidmahmud.javaapiautomation101.reqresin.DeleteUserTest@221af3c0]" started-at="2022-05-02T16:58:23 NZST" name="DeleteUserId_StatusCode" finished-at="2022-05-02T16:58:24 NZST" duration-ms="728" status="PASS">
+        <test-method signature="DeleteUserId_StatusCode()[pri:0, instance:com.nahidmahmud.javaapiautomation101.reqresin.DeleteUserTest@221af3c0]" started-at="2022-05-04T11:40:00 NZST" name="DeleteUserId_StatusCode" finished-at="2022-05-04T11:40:01 NZST" duration-ms="849" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DeleteUserId_StatusCode -->
       </class> <!-- com.nahidmahmud.javaapiautomation101.reqresin.DeleteUserTest -->
       <class name="com.nahidmahmud.javaapiautomation101.reqresin.CreateUserTest">
-        <test-method signature="CreateUserId_StatusCode()[pri:0, instance:com.nahidmahmud.javaapiautomation101.reqresin.CreateUserTest@146044d7]" started-at="2022-05-02T16:58:21 NZST" name="CreateUserId_StatusCode" finished-at="2022-05-02T16:58:23 NZST" duration-ms="2225" status="PASS">
+        <test-method signature="CreateUserId_StatusCode()[pri:0, instance:com.nahidmahmud.javaapiautomation101.reqresin.CreateUserTest@146044d7]" started-at="2022-05-04T11:39:53 NZST" name="CreateUserId_StatusCode" finished-at="2022-05-04T11:40:00 NZST" duration-ms="7065" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateUserId_StatusCode -->
       </class> <!-- com.nahidmahmud.javaapiautomation101.reqresin.CreateUserTest -->
       <class name="com.nahidmahmud.javaapiautomation101.reqresin.UserLoginTest">
-        <test-method signature="userLogin()[pri:0, instance:com.nahidmahmud.javaapiautomation101.reqresin.UserLoginTest@78a2da20]" started-at="2022-05-02T16:58:25 NZST" name="userLogin" finished-at="2022-05-02T16:58:26 NZST" duration-ms="707" status="PASS">
+        <test-method signature="userLogin()[pri:0, instance:com.nahidmahmud.javaapiautomation101.reqresin.UserLoginTest@78a2da20]" started-at="2022-05-04T11:40:03 NZST" name="userLogin" finished-at="2022-05-04T11:40:03 NZST" duration-ms="754" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userLogin -->

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 13.108 sec <<< FAILURE!
-CreateNewEmployer_StatusCode(dummy.restapiexample.com.CreateEmployeeIDTest)  Time elapsed: 0.711 sec  <<< FAILURE!
+Tests run: 13, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 23.292 sec <<< FAILURE!
+CreateNewEmployer_StatusCode(dummy.restapiexample.com.CreateEmployeeIDTest)  Time elapsed: 0.766 sec  <<< FAILURE!
 junit.framework.AssertionFailedError: expected:<200> but was:<405>
 	at junit.framework.Assert.fail(Assert.java:47)
 	at junit.framework.Assert.failNotEquals(Assert.java:282)
@@ -11,16 +11,16 @@ junit.framework.AssertionFailedError: expected:<200> but was:<405>
 	at junit.framework.Assert.assertEquals(Assert.java:207)
 	at dummy.restapiexample.com.CreateEmployeeIDTest.CreateNewEmployer_StatusCode(CreateEmployeeIDTest.java:21)
 
-GetAllEmployeeData_StatusCode(dummy.restapiexample.com.GetAllEmployeeDataTest)  Time elapsed: 0.776 sec  <<< FAILURE!
+DeleteEmployer_StatusCode(dummy.restapiexample.com.DeleteEmployeeDataTest)  Time elapsed: 0.768 sec  <<< FAILURE!
 junit.framework.AssertionFailedError: expected:<200> but was:<429>
 	at junit.framework.Assert.fail(Assert.java:47)
 	at junit.framework.Assert.failNotEquals(Assert.java:282)
 	at junit.framework.Assert.assertEquals(Assert.java:64)
 	at junit.framework.Assert.assertEquals(Assert.java:201)
 	at junit.framework.Assert.assertEquals(Assert.java:207)
-	at dummy.restapiexample.com.GetAllEmployeeDataTest.GetAllEmployeeData_StatusCode(GetAllEmployeeDataTest.java:24)
+	at dummy.restapiexample.com.DeleteEmployeeDataTest.DeleteEmployer_StatusCode(DeleteEmployeeDataTest.java:21)
 
-UpdateAnEmployeeData_StatusCode(dummy.restapiexample.com.UpdateEmployeeIDTest)  Time elapsed: 0.719 sec  <<< FAILURE!
+UpdateAnEmployeeData_StatusCode(dummy.restapiexample.com.UpdateEmployeeIDTest)  Time elapsed: 0.773 sec  <<< FAILURE!
 junit.framework.AssertionFailedError: expected:<200> but was:<429>
 	at junit.framework.Assert.fail(Assert.java:47)
 	at junit.framework.Assert.failNotEquals(Assert.java:282)
