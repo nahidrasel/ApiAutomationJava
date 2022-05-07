@@ -1,5 +1,4 @@
 package com.nahidmahmud.javaapiautomation101.reqresin;
-
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -14,7 +13,6 @@ public class UpdateUserTest {
     public void putMethodByJson() {
         //Arrange
         RestAssured.baseURI = "https://reqres.in";
-
         String id = "2";
         String resourceUrl = "/api/users/" + id;
 
@@ -22,7 +20,6 @@ public class UpdateUserTest {
         Response response = given().contentType("application/json")
                 .body("{\"name\":\"morpheus\",\n\"job\":\"zion resident\"}")
                 .when().put(resourceUrl);
-
 
         //Assert
         System.out.println("Status received => " + response.getStatusLine());

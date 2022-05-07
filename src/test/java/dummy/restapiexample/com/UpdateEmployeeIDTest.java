@@ -1,9 +1,7 @@
 package dummy.restapiexample.com;
-
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
-
 import static junit.framework.Assert.assertEquals;
 
 public class UpdateEmployeeIDTest extends BaseTestClass {

@@ -1,5 +1,4 @@
 package com.nahidmahmud.javaapiautomation101.reqresin;
-
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -23,7 +22,6 @@ public class UserLoginTest {
                 .body("{\"email\":\"eve.holt@reqres.in\",\n\"password\":\"cityslicka\"}")
                 .when().post(resourceUrl);
 
-
         //Assert
         System.out.println("Status received => " + response.getStatusLine());
         System.out.println("Response => " + response.prettyPrint());
@@ -31,7 +29,6 @@ public class UserLoginTest {
 
         //Verify response body
         JsonPath json = response.jsonPath();
-
     }
 }
 
