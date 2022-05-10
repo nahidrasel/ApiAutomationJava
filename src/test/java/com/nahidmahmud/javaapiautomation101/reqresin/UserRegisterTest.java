@@ -29,6 +29,6 @@ public class UserRegisterTest {
         assertEquals(200, response.statusCode());
 
         //Verify response body
-        JsonPath json = response.jsonPath(); 
+        JsonPath json = response.jsonPath();
     }
 }

@@ -1,47 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="9" failed="3" skipped="0">
+<testng-results ignored="0" total="16" passed="12" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-04T11:39:53 NZST" name="Command line suite" finished-at="2022-05-04T11:40:10 NZST" duration-ms="16905">
+  <suite started-at="2022-05-10T13:30:27 NZST" name="Command line suite" finished-at="2022-05-10T13:30:43 NZST" duration-ms="15722">
     <groups>
     </groups>
-    <test started-at="2022-05-04T11:39:53 NZST" name="Command line test" finished-at="2022-05-04T11:40:10 NZST" duration-ms="16905">
+    <test started-at="2022-05-10T13:30:27 NZST" name="Command line test" finished-at="2022-05-10T13:30:43 NZST" duration-ms="15722">
       <class name="com.nahidmahmud.javaapiautomation101.reqresin.UpdateUserTest">
-        <test-method signature="putMethodByJson()[pri:0, instance:com.nahidmahmud.javaapiautomation101.reqresin.UpdateUserTest@23a5fd2]" started-at="2022-05-04T11:40:02 NZST" name="putMethodByJson" finished-at="2022-05-04T11:40:03 NZST" duration-ms="824" status="PASS">
+        <test-method signature="putMethodByJson_Body()[pri:0, instance:com.nahidmahmud.javaapiautomation101.reqresin.UpdateUserTest@58fdd99]" started-at="2022-05-10T13:30:34 NZST" name="putMethodByJson_Body" finished-at="2022-05-10T13:30:34 NZST" duration-ms="716" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- putMethodByJson -->
+        </test-method> <!-- putMethodByJson_Body -->
+        <test-method signature="putMethodByJson_StatusCode()[pri:0, instance:com.nahidmahmud.javaapiautomation101.reqresin.UpdateUserTest@58fdd99]" started-at="2022-05-10T13:30:34 NZST" name="putMethodByJson_StatusCode" finished-at="2022-05-10T13:30:35 NZST" duration-ms="699" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putMethodByJson_StatusCode -->
       </class> <!-- com.nahidmahmud.javaapiautomation101.reqresin.UpdateUserTest -->
       <class name="com.nahidmahmud.javaapiautomation101.reqresin.UserRegisterTest">
-        <test-method signature="userRegistration()[pri:0, instance:com.nahidmahmud.javaapiautomation101.reqresin.UserRegisterTest@dd3b207]" started-at="2022-05-04T11:40:03 NZST" name="userRegistration" finished-at="2022-05-04T11:40:04 NZST" duration-ms="803" status="PASS">
+        <test-method signature="userRegistration()[pri:0, instance:com.nahidmahmud.javaapiautomation101.reqresin.UserRegisterTest@7bc1a03d]" started-at="2022-05-10T13:30:36 NZST" name="userRegistration" finished-at="2022-05-10T13:30:36 NZST" duration-ms="714" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userRegistration -->
       </class> <!-- com.nahidmahmud.javaapiautomation101.reqresin.UserRegisterTest -->
-      <class name="com.nahidmahmud.javaapiautomation101.reqresin.UpdatePatchUserTest">
-        <test-method signature="patchMethodByJson()[pri:0, instance:com.nahidmahmud.javaapiautomation101.reqresin.UpdatePatchUserTest@62bd765]" started-at="2022-05-04T11:40:01 NZST" name="patchMethodByJson" finished-at="2022-05-04T11:40:02 NZST" duration-ms="867" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- patchMethodByJson -->
-      </class> <!-- com.nahidmahmud.javaapiautomation101.reqresin.UpdatePatchUserTest -->
       <class name="dummy.restapiexample.com.CreateEmployeeIDTest">
-        <test-method signature="CreateNewEmployee_Body()[pri:0, instance:dummy.restapiexample.com.CreateEmployeeIDTest@58fdd99]" started-at="2022-05-04T11:40:06 NZST" name="CreateNewEmployee_Body" finished-at="2022-05-04T11:40:07 NZST" duration-ms="920" status="PASS">
+        <test-method signature="CreateNewEmployee_Body()[pri:0, instance:dummy.restapiexample.com.CreateEmployeeIDTest@ba8d91c]" started-at="2022-05-10T13:30:37 NZST" name="CreateNewEmployee_Body" finished-at="2022-05-10T13:30:38 NZST" duration-ms="836" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateNewEmployee_Body -->
-        <test-method signature="CreateNewEmployer_StatusCode()[pri:0, instance:dummy.restapiexample.com.CreateEmployeeIDTest@58fdd99]" started-at="2022-05-04T11:40:07 NZST" name="CreateNewEmployer_StatusCode" finished-at="2022-05-04T11:40:07 NZST" duration-ms="759" status="FAIL">
+        <test-method signature="CreateNewEmployer_StatusCode()[pri:0, instance:dummy.restapiexample.com.CreateEmployeeIDTest@ba8d91c]" started-at="2022-05-10T13:30:38 NZST" name="CreateNewEmployer_StatusCode" finished-at="2022-05-10T13:30:39 NZST" duration-ms="730" status="FAIL">
           <exception class="junit.framework.AssertionFailedError">
             <message>
-              <![CDATA[expected:<200> but was:<405>]]>
+              <![CDATA[expected:<200> but was:<429>]]>
             </message>
             <full-stacktrace>
-              <![CDATA[junit.framework.AssertionFailedError: expected:<200> but was:<405>
+              <![CDATA[junit.framework.AssertionFailedError: expected:<200> but was:<429>
 at junit.framework.Assert.fail(Assert.java:47)
 at junit.framework.Assert.failNotEquals(Assert.java:282)
 at junit.framework.Assert.assertEquals(Assert.java:64)
 at junit.framework.Assert.assertEquals(Assert.java:201)
 at junit.framework.Assert.assertEquals(Assert.java:207)
-at dummy.restapiexample.com.CreateEmployeeIDTest.CreateNewEmployer_StatusCode(CreateEmployeeIDTest.java:21)
+at dummy.restapiexample.com.CreateEmployeeIDTest.CreateNewEmployer_StatusCode(CreateEmployeeIDTest.java:20)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
@@ -83,26 +81,31 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
           </reporter-output>
         </test-method> <!-- CreateNewEmployer_StatusCode -->
       </class> <!-- dummy.restapiexample.com.CreateEmployeeIDTest -->
+      <class name="com.nahidmahmud.javaapiautomation101.reqresin.UpdatePatchUserTest">
+        <test-method signature="patchMethodByJson()[pri:0, instance:com.nahidmahmud.javaapiautomation101.reqresin.UpdatePatchUserTest@551bdc27]" started-at="2022-05-10T13:30:33 NZST" name="patchMethodByJson" finished-at="2022-05-10T13:30:34 NZST" duration-ms="740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patchMethodByJson -->
+      </class> <!-- com.nahidmahmud.javaapiautomation101.reqresin.UpdatePatchUserTest -->
       <class name="dummy.restapiexample.com.CopyOfGetAllEmployeeDataTest">
-        <test-method signature="allEmployeeData()[pri:0, instance:dummy.restapiexample.com.CopyOfGetAllEmployeeDataTest@551bdc27]" started-at="2022-05-04T11:40:04 NZST" name="allEmployeeData" finished-at="2022-05-04T11:40:06 NZST" duration-ms="1403" status="PASS">
+        <test-method signature="allEmployeeData()[pri:0, instance:dummy.restapiexample.com.CopyOfGetAllEmployeeDataTest@70b0b186]" started-at="2022-05-10T13:30:36 NZST" name="allEmployeeData" finished-at="2022-05-10T13:30:37 NZST" duration-ms="1024" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allEmployeeData -->
       </class> <!-- dummy.restapiexample.com.CopyOfGetAllEmployeeDataTest -->
-      <class name="dummy.restapiexample.com.DeleteEmployeeDataTest">
-        <test-method signature="DeleteEmployer_StatusCode()[pri:0, instance:dummy.restapiexample.com.DeleteEmployeeDataTest@6b1274d2]" started-at="2022-05-04T11:40:07 NZST" name="DeleteEmployer_StatusCode" finished-at="2022-05-04T11:40:08 NZST" duration-ms="767" status="FAIL">
-          <exception class="junit.framework.AssertionFailedError">
+      <class name="dummy.restapiexample.com.GetAllEmployeeDataTest">
+        <test-method signature="GetAllEmployeeData_Body()[pri:0, instance:dummy.restapiexample.com.GetAllEmployeeDataTest@5d20e46]" started-at="2022-05-10T13:30:40 NZST" name="GetAllEmployeeData_Body" finished-at="2022-05-10T13:30:41 NZST" duration-ms="782" status="FAIL">
+          <exception class="io.restassured.path.json.exception.JsonPathException">
             <message>
-              <![CDATA[expected:<200> but was:<429>]]>
+              <![CDATA[Failed to parse the JSON document]]>
             </message>
             <full-stacktrace>
-              <![CDATA[junit.framework.AssertionFailedError: expected:<200> but was:<429>
-at junit.framework.Assert.fail(Assert.java:47)
-at junit.framework.Assert.failNotEquals(Assert.java:282)
-at junit.framework.Assert.assertEquals(Assert.java:64)
-at junit.framework.Assert.assertEquals(Assert.java:201)
-at junit.framework.Assert.assertEquals(Assert.java:207)
-at dummy.restapiexample.com.DeleteEmployeeDataTest.DeleteEmployer_StatusCode(DeleteEmployeeDataTest.java:21)
+              <![CDATA[io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
+at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
+at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
+at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+at dummy.restapiexample.com.GetAllEmployeeDataTest.GetAllEmployeeData_Body(GetAllEmployeeDataTest.java:34)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
@@ -137,21 +140,95 @@ at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(Provide
 at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading '<', no possible valid JSON value or punctuation could be recognized.
+at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+at groovy.json.JsonLexer$nextToken.call(Unknown Source)
+at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
+at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
+at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
+at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
+at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
+... 38 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- junit.framework.AssertionFailedError -->
+          </exception> <!-- io.restassured.path.json.exception.JsonPathException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DeleteEmployer_StatusCode -->
-      </class> <!-- dummy.restapiexample.com.DeleteEmployeeDataTest -->
-      <class name="dummy.restapiexample.com.GetAllEmployeeDataTest">
-        <test-method signature="GetAllEmployeeData_StatusCode()[pri:0, instance:dummy.restapiexample.com.GetAllEmployeeDataTest@7bc1a03d]" started-at="2022-05-04T11:40:08 NZST" name="GetAllEmployeeData_StatusCode" finished-at="2022-05-04T11:40:09 NZST" duration-ms="1008" status="PASS">
+        </test-method> <!-- GetAllEmployeeData_Body -->
+        <test-method signature="GetAllEmployeeData_StatusCode()[pri:0, instance:dummy.restapiexample.com.GetAllEmployeeDataTest@5d20e46]" started-at="2022-05-10T13:30:41 NZST" name="GetAllEmployeeData_StatusCode" finished-at="2022-05-10T13:30:41 NZST" duration-ms="883" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetAllEmployeeData_StatusCode -->
       </class> <!-- dummy.restapiexample.com.GetAllEmployeeDataTest -->
+      <class name="dummy.restapiexample.com.DeleteEmployeeDataTest">
+        <test-method signature="DeleteEmployer_StatusCode()[pri:0, instance:dummy.restapiexample.com.DeleteEmployeeDataTest@7364985f]" started-at="2022-05-10T13:30:39 NZST" name="DeleteEmployer_StatusCode" finished-at="2022-05-10T13:30:40 NZST" duration-ms="759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteEmployer_StatusCode -->
+      </class> <!-- dummy.restapiexample.com.DeleteEmployeeDataTest -->
       <class name="dummy.restapiexample.com.UpdateEmployeeIDTest">
-        <test-method signature="UpdateAnEmployeeData_StatusCode()[pri:0, instance:dummy.restapiexample.com.UpdateEmployeeIDTest@70b0b186]" started-at="2022-05-04T11:40:09 NZST" name="UpdateAnEmployeeData_StatusCode" finished-at="2022-05-04T11:40:10 NZST" duration-ms="771" status="FAIL">
+        <test-method signature="UpdateAnEmployeeData_Body()[pri:0, instance:dummy.restapiexample.com.UpdateEmployeeIDTest@709ba3fb]" started-at="2022-05-10T13:30:41 NZST" name="UpdateAnEmployeeData_Body" finished-at="2022-05-10T13:30:42 NZST" duration-ms="751" status="FAIL">
+          <exception class="io.restassured.path.json.exception.JsonPathException">
+            <message>
+              <![CDATA[Failed to parse the JSON document]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
+at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
+at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
+at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+at dummy.restapiexample.com.UpdateEmployeeIDTest.UpdateAnEmployeeData_Body(UpdateEmployeeIDTest.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading '<', no possible valid JSON value or punctuation could be recognized.
+at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+at groovy.json.JsonLexer$nextToken.call(Unknown Source)
+at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
+at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
+at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
+at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
+at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
+... 38 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.restassured.path.json.exception.JsonPathException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateAnEmployeeData_Body -->
+        <test-method signature="UpdateAnEmployeeData_StatusCode()[pri:0, instance:dummy.restapiexample.com.UpdateEmployeeIDTest@709ba3fb]" started-at="2022-05-10T13:30:42 NZST" name="UpdateAnEmployeeData_StatusCode" finished-at="2022-05-10T13:30:43 NZST" duration-ms="752" status="FAIL">
           <exception class="junit.framework.AssertionFailedError">
             <message>
               <![CDATA[expected:<200> but was:<429>]]>
@@ -163,7 +240,7 @@ at junit.framework.Assert.failNotEquals(Assert.java:282)
 at junit.framework.Assert.assertEquals(Assert.java:64)
 at junit.framework.Assert.assertEquals(Assert.java:201)
 at junit.framework.Assert.assertEquals(Assert.java:207)
-at dummy.restapiexample.com.UpdateEmployeeIDTest.UpdateAnEmployeeData_StatusCode(UpdateEmployeeIDTest.java:22)
+at dummy.restapiexample.com.UpdateEmployeeIDTest.UpdateAnEmployeeData_StatusCode(UpdateEmployeeIDTest.java:20)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
@@ -206,19 +283,23 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
         </test-method> <!-- UpdateAnEmployeeData_StatusCode -->
       </class> <!-- dummy.restapiexample.com.UpdateEmployeeIDTest -->
       <class name="com.nahidmahmud.javaapiautomation101.reqresin.DeleteUserTest">
-        <test-method signature="DeleteUserId_StatusCode()[pri:0, instance:com.nahidmahmud.javaapiautomation101.reqresin.DeleteUserTest@221af3c0]" started-at="2022-05-04T11:40:00 NZST" name="DeleteUserId_StatusCode" finished-at="2022-05-04T11:40:01 NZST" duration-ms="849" status="PASS">
+        <test-method signature="DeleteUserId_StatusCode()[pri:0, instance:com.nahidmahmud.javaapiautomation101.reqresin.DeleteUserTest@dd3b207]" started-at="2022-05-10T13:30:32 NZST" name="DeleteUserId_StatusCode" finished-at="2022-05-10T13:30:33 NZST" duration-ms="744" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DeleteUserId_StatusCode -->
       </class> <!-- com.nahidmahmud.javaapiautomation101.reqresin.DeleteUserTest -->
       <class name="com.nahidmahmud.javaapiautomation101.reqresin.CreateUserTest">
-        <test-method signature="CreateUserId_StatusCode()[pri:0, instance:com.nahidmahmud.javaapiautomation101.reqresin.CreateUserTest@146044d7]" started-at="2022-05-04T11:39:53 NZST" name="CreateUserId_StatusCode" finished-at="2022-05-04T11:40:00 NZST" duration-ms="7065" status="PASS">
+        <test-method signature="CreateUserId_Body()[pri:0, instance:com.nahidmahmud.javaapiautomation101.reqresin.CreateUserTest@516be40f]" started-at="2022-05-10T13:30:27 NZST" name="CreateUserId_Body" finished-at="2022-05-10T13:30:31 NZST" duration-ms="3926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateUserId_Body -->
+        <test-method signature="CreateUserId_StatusCode()[pri:0, instance:com.nahidmahmud.javaapiautomation101.reqresin.CreateUserTest@516be40f]" started-at="2022-05-10T13:30:31 NZST" name="CreateUserId_StatusCode" finished-at="2022-05-10T13:30:32 NZST" duration-ms="846" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateUserId_StatusCode -->
       </class> <!-- com.nahidmahmud.javaapiautomation101.reqresin.CreateUserTest -->
       <class name="com.nahidmahmud.javaapiautomation101.reqresin.UserLoginTest">
-        <test-method signature="userLogin()[pri:0, instance:com.nahidmahmud.javaapiautomation101.reqresin.UserLoginTest@78a2da20]" started-at="2022-05-04T11:40:03 NZST" name="userLogin" finished-at="2022-05-04T11:40:03 NZST" duration-ms="754" status="PASS">
+        <test-method signature="userLogin()[pri:0, instance:com.nahidmahmud.javaapiautomation101.reqresin.UserLoginTest@6b1274d2]" started-at="2022-05-10T13:30:35 NZST" name="userLogin" finished-at="2022-05-10T13:30:36 NZST" duration-ms="724" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userLogin -->

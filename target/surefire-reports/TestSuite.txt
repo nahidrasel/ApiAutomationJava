@@ -1,31 +1,56 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 23.292 sec <<< FAILURE!
-CreateNewEmployer_StatusCode(dummy.restapiexample.com.CreateEmployeeIDTest)  Time elapsed: 0.766 sec  <<< FAILURE!
-junit.framework.AssertionFailedError: expected:<200> but was:<405>
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.failNotEquals(Assert.java:282)
-	at junit.framework.Assert.assertEquals(Assert.java:64)
-	at junit.framework.Assert.assertEquals(Assert.java:201)
-	at junit.framework.Assert.assertEquals(Assert.java:207)
-	at dummy.restapiexample.com.CreateEmployeeIDTest.CreateNewEmployer_StatusCode(CreateEmployeeIDTest.java:21)
-
-DeleteEmployer_StatusCode(dummy.restapiexample.com.DeleteEmployeeDataTest)  Time elapsed: 0.768 sec  <<< FAILURE!
+Tests run: 17, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 17.503 sec <<< FAILURE!
+CreateNewEmployer_StatusCode(dummy.restapiexample.com.CreateEmployeeIDTest)  Time elapsed: 0.735 sec  <<< FAILURE!
 junit.framework.AssertionFailedError: expected:<200> but was:<429>
 	at junit.framework.Assert.fail(Assert.java:47)
 	at junit.framework.Assert.failNotEquals(Assert.java:282)
 	at junit.framework.Assert.assertEquals(Assert.java:64)
 	at junit.framework.Assert.assertEquals(Assert.java:201)
 	at junit.framework.Assert.assertEquals(Assert.java:207)
-	at dummy.restapiexample.com.DeleteEmployeeDataTest.DeleteEmployer_StatusCode(DeleteEmployeeDataTest.java:21)
+	at dummy.restapiexample.com.CreateEmployeeIDTest.CreateNewEmployer_StatusCode(CreateEmployeeIDTest.java:20)
 
-UpdateAnEmployeeData_StatusCode(dummy.restapiexample.com.UpdateEmployeeIDTest)  Time elapsed: 0.773 sec  <<< FAILURE!
+GetAllEmployeeData_Body(dummy.restapiexample.com.GetAllEmployeeDataTest)  Time elapsed: 0.784 sec  <<< FAILURE!
+io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at dummy.restapiexample.com.GetAllEmployeeDataTest.GetAllEmployeeData_Body(GetAllEmployeeDataTest.java:34)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading '<', no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
+	... 38 more
+
+UpdateAnEmployeeData_Body(dummy.restapiexample.com.UpdateEmployeeIDTest)  Time elapsed: 0.746 sec  <<< FAILURE!
+io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at dummy.restapiexample.com.UpdateEmployeeIDTest.UpdateAnEmployeeData_Body(UpdateEmployeeIDTest.java:31)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading '<', no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
+	... 38 more
+
+UpdateAnEmployeeData_StatusCode(dummy.restapiexample.com.UpdateEmployeeIDTest)  Time elapsed: 0.755 sec  <<< FAILURE!
 junit.framework.AssertionFailedError: expected:<200> but was:<429>
 	at junit.framework.Assert.fail(Assert.java:47)
 	at junit.framework.Assert.failNotEquals(Assert.java:282)
 	at junit.framework.Assert.assertEquals(Assert.java:64)
 	at junit.framework.Assert.assertEquals(Assert.java:201)
 	at junit.framework.Assert.assertEquals(Assert.java:207)
-	at dummy.restapiexample.com.UpdateEmployeeIDTest.UpdateAnEmployeeData_StatusCode(UpdateEmployeeIDTest.java:22)
+	at dummy.restapiexample.com.UpdateEmployeeIDTest.UpdateAnEmployeeData_StatusCode(UpdateEmployeeIDTest.java:20)
 

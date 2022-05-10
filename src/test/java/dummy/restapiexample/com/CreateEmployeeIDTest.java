@@ -11,11 +11,10 @@ public class CreateEmployeeIDTest extends BaseTestClass {
     @Test
     public void CreateNewEmployer_StatusCode() {
         String requestBody = "{\"name\":\"test\",\"salary\":\"123\",\"age\":\"23\"}";
-        String resourceUrl = "/api/v1/EmployerCreate";
+        String resourceUrl = "/api/v1/create";
 
         Response response = createPostRequest(resourceUrl, requestBody);
 
-        //Assert
         System.out.println("Status received => " + response.getStatusLine());
         System.out.println("Response => " + response.print());
         assertEquals(200, response.statusCode());
