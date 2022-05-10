@@ -1,11 +1,12 @@
 package dummy.restapiexample.com;
+
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
+
 import static junit.framework.Assert.assertEquals;
 
 public class UpdateEmployeeIDTest extends BaseTestClass {
-
 
     @Test
     public void UpdateAnEmployeeData_StatusCode() {
@@ -14,11 +15,17 @@ public class UpdateEmployeeIDTest extends BaseTestClass {
 
         Response response = updatePutRequest(resourceUrl, requestBody);
 
-        //Assert
         System.out.println("Status received => " + response.getStatusLine());
         System.out.println("Response => " + response.print());
         assertEquals(200, response.statusCode());
+    }
 
+    @Test
+    public void UpdateAnEmployeeData_Body() {
+        String requestBody = "{\"employee_name\":\"Nahid\",\n\"employee_salary\":\"123\",\n\"employee_age\":\"23\"}";
+        String resourceUrl = "/public/api/v1/update/21";
+
+        Response response = updatePutRequest(resourceUrl, requestBody);
         //Verify response body
         JsonPath json = response.jsonPath();
         String name = json.get("data.employee_name");
@@ -33,10 +40,8 @@ public class UpdateEmployeeIDTest extends BaseTestClass {
         System.out.println("Age is => " + age);
         assertEquals("23", age);
 
-
         String message = json.get("message");
         System.out.println("Message => " + message);
         assertEquals("Successfully! Record has been updated.", message);
-
     }
 }

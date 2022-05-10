@@ -30,5 +30,7 @@ public class BaseTestClass {
         RestAssured.baseURI = baseUrl;
         RequestSpecification httpRequest = RestAssured.given().contentType("application/json").body(body);
         return httpRequest.request(Method.PUT, resourceUrl);
+
     }
+
 }

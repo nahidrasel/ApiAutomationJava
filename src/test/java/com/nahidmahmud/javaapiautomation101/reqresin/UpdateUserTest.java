@@ -7,19 +7,28 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 import static junit.framework.Assert.assertEquals;
 
-public class UpdateUserTest {
+public class UpdateUserTest extends BaseTestClass {
+
+
+    //Act
+    //  Response response = given().contentType("application/json");
 
     @Test
-    public void putMethodByJson() {
-        //Arrange
-        RestAssured.baseURI = "https://reqres.in";
+    public void putMethodByJson_StatusCode() {
+
+        String requestBody = "{\"name\":\"morpheus\",\n\"job\":\"zion resident\"}";
+
         String id = "2";
         String resourceUrl = "/api/users/" + id;
 
-        //Act
-        Response response = given().contentType("application/json")
-                .body("{\"name\":\"morpheus\",\n\"job\":\"zion resident\"}")
-                .when().put(resourceUrl);
+        Response response = updatePutRequest(resourceUrl, requestBody);
+
+        System.out.println("Status received => " + response.getStatusLine());
+        System.out.println("Response => " + response.prettyPrint());
+        assertEquals(200, response.statusCode());
+    }
+}
+
 
         //Assert
         System.out.println("Status received => " + response.getStatusLine());

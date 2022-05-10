@@ -12,6 +12,24 @@ public class UpdatePatchUserTest {
 
     @Test
     public void patchMethodByJson() {
+
+
+
+
+        @Test
+        public void patchUser_StatusCode() {
+
+            //Arrange
+            String requestBody = "{\"name\":\"morpheus\",\n\"job\":\"leader\"}";
+            String resourceUrl = "/api/users/";
+
+            Response response = createPostRequest(resourceUrl, requestBody);
+
+            System.out.println("Status received => " + response.getStatusLine());
+            System.out.println("Response => " + response.prettyPrint());
+            assertEquals(201, response.statusCode());
+        }
+
         //Arrange
         RestAssured.baseURI = "https://reqres.in";
 

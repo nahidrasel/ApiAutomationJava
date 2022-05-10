@@ -18,14 +18,13 @@ public class DeleteUserTest extends BaseTestClass {
 
         Response response = deletePostRequest(resourceUrl, requestBody);
 
-        //Assert
+        //Assert Status Code
         System.out.println("Status received => " + response.getStatusLine());
         System.out.println("Response => " + response.prettyPrint() + "Should be Nothing");
         assertEquals(204, response.statusCode());
 
         //Verify response body
         JsonPath json = response.jsonPath();
-
     }
 }
 

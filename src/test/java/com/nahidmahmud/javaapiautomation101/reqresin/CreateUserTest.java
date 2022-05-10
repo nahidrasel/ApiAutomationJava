@@ -11,17 +11,25 @@ public class CreateUserTest extends BaseTestClass {
     @Test
     public void CreateUserId_StatusCode() {
 
-        //Arrange
+
         String requestBody = "{\"name\":\"morpheus\",\n\"job\":\"leader\"}";
         String resourceUrl = "/api/users/";
 
         Response response = createPostRequest(resourceUrl, requestBody);
 
-        //Assert
         System.out.println("Status received => " + response.getStatusLine());
         System.out.println("Response => " + response.prettyPrint());
         assertEquals(201, response.statusCode());
+    }
 
+    @Test
+    public void CreateUserId_Body() {
+
+        //Arrange
+        String requestBody = "{\"name\":\"morpheus\",\n\"job\":\"leader\"}";
+        String resourceUrl = "/api/users/";
+
+        Response response = createPostRequest(resourceUrl, requestBody);
         //Verify response body
         JsonPath json = response.jsonPath();
 

@@ -1,10 +1,7 @@
 package dummy.restapiexample.com;
 
-import io.restassured.RestAssured;
-import io.restassured.http.Method;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.Test;
 
 import static junit.framework.Assert.assertEquals;
@@ -22,7 +19,14 @@ public class GetAllEmployeeDataTest extends BaseTestClass {
         System.out.println("Status received => " + response.getStatusLine());
         System.out.println("Response => " + response.print());
         assertEquals(200, response.statusCode());
+    }
 
+    @Test
+    public void GetAllEmployeeData_Body() {
+        String requestBody = "";
+        String resourceUrl = "/api/v1/employees";
+
+        Response response = getPostRequest(resourceUrl, requestBody);
 
         //Verify response body
         JsonPath json = response.jsonPath();
