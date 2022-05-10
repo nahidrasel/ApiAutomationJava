@@ -23,14 +23,12 @@ public class UserRegisterTest {
                 .body("{\"email\":\"eve.holt@reqres.in\",\n\"password\":\"pistol\"}")
                 .when().post(resourceUrl);
 
-
         //Assert
         System.out.println("Status received => " + response.getStatusLine());
         System.out.println("Response => " + response.prettyPrint());
         assertEquals(200, response.statusCode());
 
         //Verify response body
-        JsonPath json = response.jsonPath();
-
+        JsonPath json = response.jsonPath(); 
     }
 }
