@@ -28,7 +28,6 @@ public class CreateEmployeeIDTest extends BaseTestClass {
 
         Response response = createPostRequest(resourceUrl, requestBody);
 
-
         //Verify response body
         JsonPath json = response.jsonPath();
 
@@ -47,6 +46,5 @@ public class CreateEmployeeIDTest extends BaseTestClass {
         String message = json.get("message");
         System.out.println("Message => " + message);
         assertEquals("Successfully! Record has been added.", message);
-
     }
 }
