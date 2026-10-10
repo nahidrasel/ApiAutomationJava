@@ -20,8 +20,8 @@
     </plugins>
   </build>
   <properties>
-    <maven.compiler.source>18</maven.compiler.source>
-    <maven.compiler.target>18</maven.compiler.target>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
   </properties>
   <name>javaapiautomation101</name>
   <url>http://maven.apache.org</url>
@@ -59,7 +59,7 @@
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
-      <version>RELEASE</version>
+      <version>7.7.1</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
