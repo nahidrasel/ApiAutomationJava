@@ -1,0 +1,8 @@
+# Maven build output (existing tracked files are not removed by ignore rules)
+/target/
+
+# Compiled Java classes
+*.class
+
+# IDE metadata
+.idea/workspace.xml
